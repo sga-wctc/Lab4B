@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4B.Lab4BEntryEditor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lab 4B - Entry and Editor" />
+            <StackLayout>
+                <Editor Placeholder="Editor" VerticalOptions="CenterAndExpand"
+                    PlaceholderColor="Blue" 
+                    AutoSize="TextChanges"
+                    Text="This is a Readonly Field"
+                    x:Name="displayText"/>
+                <Entry Placeholder="Entry"
+                    VerticalOptions="CenterAndExpand" 
+                    TextChanged="EditorTextChanged"   />
+                <Editor Placeholder="Editor" VerticalOptions="CenterAndExpand"
+                    PlaceholderColor="Purple" 
+                    AutoSize="TextChanges"
+                    TextChanged="EditorTextChanged"/>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

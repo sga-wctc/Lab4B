@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4B.MainPage"
+             Padding="5"
+             Title="Lab 4 - Tutorial Examples">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" >
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="BackgroundColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="20" />
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Lab 4B - Tutorial Exercise" FontSize="Title" Padding="30,10,30,10" TextColor="Purple"/>
+
+        <Button Text="Entry and Editor Field"
+            Clicked="OnButtonClickedLab4BEntryEditor"
+            BorderColor="Red"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50" />
+        <Button Text="Label exercise"
+            Clicked="OnButtonClickedLab4BLabel"
+            BorderColor="Red"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50" />
+        <Button Text="Data Binding"
+            Clicked="OnButtonClickedLab4BDataBinding"
+            TextColor="Blue"
+            BackgroundColor="Aqua"
+            BorderColor="Red"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50" />
+        <Label Text="StackLayout - This screen" />
+        <Label Text="Buttons Layout - This screen" />
+        <Label Text="Styles used throughout application" />
+    </StackLayout>
+
+</ContentPage>
+    

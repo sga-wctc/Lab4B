@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4B.Lab4BLabel">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" >
+                <Setter Property="BackgroundColor" Value="Gray"/>
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+
+        <StackLayout>
+            <Label Text="Lab 4B - Label Exercise" BackgroundColor="White" TextColor="Black"/>
+            
+            <Label Text="Label exercise - background from local page , otherwise from app" />
+
+            <Label FontSize="30">
+                <Label.FormattedText>
+                   <FormattedString>
+                       <Span Text="Text Inline format with " />
+                       <Span Text="italics, "
+                            FontAttributes="Italic" />
+                       <Span Text="and underline."
+                            TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="Label exercise - style from class" 
+                   Style="{StaticResource labelMystyle}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
